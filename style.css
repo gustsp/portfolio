@@ -41,7 +41,7 @@ div.transbox2 {
     margin-right: auto;
     margin-top: 300px;
     height: 500px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
 div.brownbox {
@@ -94,4 +94,145 @@ div.aboutme p{
     color: black;
     font-size: 30px;
     padding : 50px;
+}
+
+div.exp {
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255 ,0.9); 
+}
+
+div.prakse  {
+    margin: 50px;
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: #98cb00;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.description h1{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    color:  #98cb00;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.description p{
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+div.prakse2 {
+    margin: 50px;
+    width: 400px;
+    height: 200px;
+    background-color: #cc6733;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+div.prakse3 {
+    margin: 50px;
+    width: 400px;
+    height: 200px;
+    background-color: #6b6b6b;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+div.description2 h1{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    color:  #cc6733;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.description3 h1{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    color:  #6b6b6b;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#contact-area {
+	width: 600px;
+	margin-top: 25px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid #900;
+}
+
+#contact-area input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+div.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: rgb(255, 255, 255 ,0.9);
 }
