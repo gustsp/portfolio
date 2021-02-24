@@ -2,26 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Roboto:ital@0;1&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Zilla+Slab&display=swap" rel="stylesheet">
   </head>
   <body>
+    <id="top">
+    <div class="transparent-box"></div>
     <div class="transbox">
       <h1>Hi, I'm Gusts, web developer</h1>
-      <h2>Front End Developer / Web Developer / Back End Developer </h2>
+    </div>
+    <div id="navbar">
+      <a class="active" href="#top">Home</a>
+      <a href="#About">About</a>
+      <a href="#Experience">Experience</a>
+      <a href="#Skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact-me">Contacts</a>
     </div>
     <div class="transbox2">
-      <div class="aboutme">
+      <div class="aboutme" id="About">
         <h1>ABOUT ME</h1>
         <p>Hello!  I'm 24 years old.  Currently living in Riga.  My hobbies are sports. I enjoy playing all types of sports such as basketball, volleyball, florball. I'm also a musician. I've been playing saxophone since i was 9 years old. I'm also playing in orchestra. I love trying new experiences, going to new places, trying new food... and I love people - open, smiling and positively energized. </p>
       </div>
       <div class="brownbox"><img src="img\oooo.plus_57.png" alt="Avatar" class="avatar"><h1>Gusts Juris Pozņakovs</h1></div>
     </div>
+  <div class="experience" id="Experience"><h1>Experience</h1></div>
   <div class="exp">
     <table>
       <tr>
@@ -47,6 +58,46 @@
       </tr>
       </table>
   </div>
+    <div class="myskills" id="Skills"><h1>My Skills</h1></div>
+    <div class="skills">
+      <img src="img\HTML.png" alt="HTML-logo" class="myskills">
+      <img src="img\CSS.png" alt="CSS-logo" class="myskills">
+      <img src="img\GITHUB.png" alt="GITHUB-logo" class="myskills">
+      <img src="img\JS.png" alt="JS-logo" class="myskills">
+      <img src="img\VS.png" alt="VS-logo" class="myskills">
+    </div>
+    <div class="skills">
+      <img src="img\Word.png" alt="Word-logo" class="myskills">
+      <img src="img\excel.png" alt="Excel-logo" class="myskills">
+      <img src="img\solidworks.png" alt="Solidworks-logo" class="myskills">
+      <img src="img\autocads.png" alt="Autocad-logo" class="myskills">
+      <img src="img\powerpoint.png" alt="Powerpoint-logo" class="myskills">
+    </div>
+    <div class="education" id="education"><h1>Education</h1></div>
+    <div class="education">
+      <div class="education1">
+        <img src="img\RTU PNG.png" alt="HTML-logo" class="education-logo">
+        <p>Mechanical engineering (unfinished)
+          <br>
+          09.2015 - 06.2018
+        </p>
+      </div>
+      <div class="education1">
+        <img src="img\riga-coding-school.png" alt="HTML-logo" class="education-logo1">
+        <p>WEB-bootcamp 90 hour course
+          <br>
+          12.2020 - 03.2021
+        </p>
+      </div>
+      <div class="education1">
+        <img src="img\rtk-logo.png" alt="HTML-logo" class="education-logo">
+        <p>Mechanical engineering 
+          <br>
+           09.2019
+        </p>
+      </div>
+    </div>
+  <div class="contactme" id="contact-me"><h1>Contact Me</h1></div>
   <div class="contact">
     <div id="contact-area">
       <form action="mailto:gustsp@inbox.lv" method="post" enctype="text/plain">
@@ -61,5 +112,19 @@
       <div style="clear: both;"></div>
     </div>
   </div>
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
   </body>
 </html>
